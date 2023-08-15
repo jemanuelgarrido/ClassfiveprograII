@@ -25,10 +25,19 @@ imprime(em);
                 //System.out.println("nombre"+em.getNombre()+"Sueldo"+ em.getSueldo());
                 //System.out.println(em.toString());
                 ScrumMaster sm= new ScrumMaster("Juan",3500.0,"Informatica");
-                imprime(sm);
+                //System.out.println(sm. toString());
                 //System.out.println(sm.obntenerDetalles());
                 //System.out.println(sm.toString());
-
+                ScrumMaster sm1= new ScrumMaster("Juan",3500.0,"Informatica");
+                //System.out.println("emp scrum"+(em==sm));
+                System.out.println("emp scrum"+(sm==sm1));
+    if (sm.equals(sm1)){
+        System.out.println("Son iguales");
+        System.out.println(sm.toString());
+    }
+    else {
+        System.out.println("No son iguales");
+    }
 
 
             }
